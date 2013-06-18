@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfSonicTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500.916" Width="787.836">
+    <Grid x:Name="gridMain" Margin="0,0,-143,0">
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="41" Margin="25,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="723"/>
+        <TabControl HorizontalAlignment="Left" Height="401" Margin="25,10,0,0" VerticalAlignment="Top" Width="723">
+            <TabItem x:Name="tabSonicTestSetup" Header="Test Setup" HorizontalAlignment="Right" Width="80" Margin="0,-2,-21,-1">
+                <Grid Background="#FFE5E5E5">
+                    <Grid x:Name="gridNewTest" HorizontalAlignment="Left" Height="327" Margin="246,19,0,0" VerticalAlignment="Top" Width="433">
+                        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="327" Stroke="Black" VerticalAlignment="Top" Width="433"/>
+                        <TextBox x:Name="txtSonicTestName" HorizontalAlignment="Left" Height="27" Margin="96,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                        <TextBox x:Name="txtSonicXML" HorizontalAlignment="Left" Height="203" Margin="21,62,0,0" VerticalAlignment="Top" Width="297" TextWrapping="Wrap" AcceptsReturn="True"/>
+                        <Button x:Name="btnAddTest" Content="Add" HorizontalAlignment="Left" Height="20" Margin="38,282,0,0" VerticalAlignment="Top" Width="64" Click="btnAddTest_Click"/>
+                        <Label Content="Test Name:" HorizontalAlignment="Left" Height="27" Margin="21,10,0,0" VerticalAlignment="Top" Width="68"/>
+                        <Label Content="Test XML:" HorizontalAlignment="Left" Height="25" Margin="21,37,0,0" VerticalAlignment="Top" Width="81"/>
+                        <TextBox x:Name="txtSonicTestNameOrig" HorizontalAlignment="Left" Height="23" Margin="335,14,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="54"/>
+                        <Button x:Name="btnCancelNewTest" Content="Cancel" HorizontalAlignment="Left" Height="20" Margin="252,282,0,0" VerticalAlignment="Top" Width="66" Click="btnCancelNewTest_Click"/>
+                    </Grid>
+                    <TreeView x:Name="treeSonicTest" HorizontalAlignment="Left" Height="212" Margin="25,19,0,0" VerticalAlignment="Top" Width="181" SelectedItemChanged="treeSonicTest_SelectedItemChanged" MouseDoubleClick="treeSonicTest_MouseDoubleClick"/>
+                    <Button x:Name="btnNewSonicTest" Content="New Test" HorizontalAlignment="Left" Height="23" Margin="25,247,0,0" VerticalAlignment="Top" Width="81" Click="btnNewSonicTest_Click"/>
+                    <Button x:Name="btnLoadSonicTest" Content="Load Tests" HorizontalAlignment="Left" Height="26" Margin="18,275,0,0" VerticalAlignment="Top" Width="71" Click="btnLoadSonicTest_Click"/>
+                    <Button x:Name="btnSaveTests" Content="Save Tests" HorizontalAlignment="Left" Height="26" Margin="96,275,0,0" VerticalAlignment="Top" Width="67" Click="btnSaveTests_Click" RenderTransformOrigin="0.505,2.134"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabRunTest" Header="Run Tests" Margin="36,0,-40,-3">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtHostPort" HorizontalAlignment="Left" Height="23" Margin="89,13,0,0" TextWrapping="Wrap" Text="mem2ax03:2518" VerticalAlignment="Top" Width="215"/>
+                    <Label Content="Host:Port :" HorizontalAlignment="Left" Height="23" Margin="12,13,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right"/>
+                    <TextBox x:Name="txtTopic" HorizontalAlignment="Left" Height="23" Margin="89,43,0,0" TextWrapping="Wrap" Text="ivrdwhdev.JURIS.cms4.s999" VerticalAlignment="Top" Width="215"/>
+                    <Label Content="Topic: " HorizontalAlignment="Left" Height="22" Margin="12,43,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" Padding="0" VerticalContentAlignment="Center"/>
+                    <Button x:Name="btnRunTest" Content="Go!" HorizontalAlignment="Left" Height="23" Margin="326,42,0,0" VerticalAlignment="Top" Width="47" Click="btnRunTest_Click"/>
+                    <TreeView x:Name="treeResults" HorizontalAlignment="Left" Height="249" Margin="23,80,0,0" VerticalAlignment="Top" Width="564"/>
+                    <Button x:Name="btnSaveResults" Content="Save Results" HorizontalAlignment="Left" Height="21" Margin="25,338,0,0" VerticalAlignment="Top" Width="82"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
