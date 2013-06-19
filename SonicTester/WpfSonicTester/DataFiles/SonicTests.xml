@@ -87,7 +87,97 @@
 &lt;DATE_TRANSFER_BEGIN&gt;6/4/2013 11:59:36 AM&lt;/DATE_TRANSFER_BEGIN&gt; 
 &lt;DATE_TRANSFER_COMPLETE /&gt; 
 &lt;TRANSFER_ERROR_TEXT /&gt; 
-&lt;/ivr_data_transfer&gt;b</testXML>
+&lt;/ivr_data_transfer&gt;</testXML>
+    </SonicTest>
+    <SonicTest>
+      <testName>pmnt_query_002</testName>
+      <testXML>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ivr_data_transfer&gt;
+    &lt;UCID_NUMBER&gt;20130401002&lt;/UCID_NUMBER&gt;
+    &lt;REQUEST_NUMBER&gt;779&lt;/REQUEST_NUMBER&gt;
+    &lt;CLIENT_NUMBER&gt;8888&lt;/CLIENT_NUMBER&gt;
+    &lt;EMPLOYEE_UNIQUE_NUMBER/&gt;
+    &lt;TARGET_SYSTEM&gt;JURIS&lt;/TARGET_SYSTEM&gt;
+    &lt;TARGET_TABLE&gt;note&lt;/TARGET_TABLE&gt;
+    &lt;TRANSFER_TYPE&gt;pmnt-queried-note&lt;/TRANSFER_TYPE&gt;
+    &lt;TRANSFER_COMMENT/&gt;
+    &lt;ROUTINE_NAME&gt;GetCheckHistoryService&lt;/ROUTINE_NAME&gt;
+    &lt;TRANSFER_VALUE_1&gt;598.3&lt;/TRANSFER_VALUE_1&gt;
+    &lt;TRANSFER_VALUE_2&gt;IV&lt;/TRANSFER_VALUE_2&gt;
+    &lt;TRANSFER_VALUE_3&gt;Payment status queried. Information accessd on 19-JUN-13 Central Time&lt;/TRANSFER_VALUE_3&gt;
+    &lt;TRANSFER_VALUE_4/&gt;
+    &lt;TRANSFER_VALUE_5/&gt;
+    &lt;TRANSFER_VALUE_6/&gt;
+    &lt;TRANSFER_VALUE_7/&gt;
+    &lt;TRANSFER_VALUE_8/&gt;
+    &lt;TRANSFER_VALUE_9/&gt;
+    &lt;TRANSFER_VALUE_10/&gt;
+    &lt;DATE_OF_REQUEST&gt;6/19/2013 3:04:36 PM&lt;/DATE_OF_REQUEST&gt;
+    &lt;TRANSFER_STATUS&gt;A&lt;/TRANSFER_STATUS&gt;
+    &lt;DATE_TRANSFER_BEGIN&gt;6/19/2013 3:04:39 PM&lt;/DATE_TRANSFER_BEGIN&gt;
+    &lt;DATE_TRANSFER_COMPLETE/&gt;
+    &lt;TRANSFER_ERROR_TEXT/&gt;
+&lt;/ivr_data_transfer&gt;</testXML>
+    </SonicTest>
+    <SonicTest>
+      <testName>RTW_002</testName>
+      <testXML>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ivr_data_transfer&gt;
+    &lt;UCID_NUMBER&gt;10070&lt;/UCID_NUMBER&gt;
+    &lt;REQUEST_NUMBER&gt;780&lt;/REQUEST_NUMBER&gt;
+    &lt;CLIENT_NUMBER&gt;2573&lt;/CLIENT_NUMBER&gt;
+    &lt;EMPLOYEE_UNIQUE_NUMBER&gt;422820639&lt;/EMPLOYEE_UNIQUE_NUMBER&gt;
+    &lt;TARGET_SYSTEM&gt;JURIS&lt;/TARGET_SYSTEM&gt;
+    &lt;TARGET_TABLE&gt;diary&lt;/TARGET_TABLE&gt;
+    &lt;TRANSFER_TYPE&gt;RTW-date-diary-and-note&lt;/TRANSFER_TYPE&gt;
+    &lt;TRANSFER_COMMENT/&gt;
+    &lt;ROUTINE_NAME&gt;ReturnToWorkDateService&lt;/ROUTINE_NAME&gt;
+    &lt;TRANSFER_VALUE_1&gt;WK&lt;/TRANSFER_VALUE_1&gt;
+    &lt;TRANSFER_VALUE_2&gt;IV&lt;/TRANSFER_VALUE_2&gt;
+    &lt;TRANSFER_VALUE_3&gt;611287910&lt;/TRANSFER_VALUE_3&gt;
+    &lt;TRANSFER_VALUE_4&gt;05011966&lt;/TRANSFER_VALUE_4&gt;
+    &lt;TRANSFER_VALUE_5&gt;05102013&lt;/TRANSFER_VALUE_5&gt;
+    &lt;TRANSFER_VALUE_6&gt;N&lt;/TRANSFER_VALUE_6&gt;
+    &lt;TRANSFER_VALUE_7/&gt;
+    &lt;TRANSFER_VALUE_8/&gt;
+    &lt;TRANSFER_VALUE_9/&gt;
+    &lt;TRANSFER_VALUE_10/&gt;
+    &lt;DATE_OF_REQUEST&gt;6/19/2013 3:09:15 PM&lt;/DATE_OF_REQUEST&gt;
+    &lt;TRANSFER_STATUS&gt;A&lt;/TRANSFER_STATUS&gt;
+    &lt;DATE_TRANSFER_BEGIN&gt;6/19/2013 3:09:17 PM&lt;/DATE_TRANSFER_BEGIN&gt;
+    &lt;DATE_TRANSFER_COMPLETE/&gt;
+    &lt;TRANSFER_ERROR_TEXT/&gt;
+&lt;/ivr_data_transfer&gt;</testXML>
+    </SonicTest>
+    <SonicTest>
+      <testName>elec_auth_002</testName>
+      <testXML>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ivr_data_transfer&gt;
+    &lt;UCID_NUMBER&gt;1112&lt;/UCID_NUMBER&gt;
+    &lt;REQUEST_NUMBER&gt;781&lt;/REQUEST_NUMBER&gt;
+    &lt;CLIENT_NUMBER&gt;1877&lt;/CLIENT_NUMBER&gt;
+    &lt;EMPLOYEE_UNIQUE_NUMBER&gt;375886374&lt;/EMPLOYEE_UNIQUE_NUMBER&gt;
+    &lt;TARGET_SYSTEM&gt;JURIS&lt;/TARGET_SYSTEM&gt;
+    &lt;TARGET_TABLE&gt;csv-file&lt;/TARGET_TABLE&gt;
+    &lt;TRANSFER_TYPE&gt;electronic-auth&lt;/TRANSFER_TYPE&gt;
+    &lt;TRANSFER_COMMENT/&gt;
+    &lt;ROUTINE_NAME&gt;SubmitElectronicAuthService&lt;/ROUTINE_NAME&gt;
+    &lt;TRANSFER_VALUE_1/&gt;
+    &lt;TRANSFER_VALUE_2&gt;3758&lt;/TRANSFER_VALUE_2&gt;
+    &lt;TRANSFER_VALUE_3/&gt;
+    &lt;TRANSFER_VALUE_4/&gt;
+    &lt;TRANSFER_VALUE_5/&gt;
+    &lt;TRANSFER_VALUE_6/&gt;
+    &lt;TRANSFER_VALUE_7/&gt;
+    &lt;TRANSFER_VALUE_8/&gt;
+    &lt;TRANSFER_VALUE_9/&gt;
+    &lt;TRANSFER_VALUE_10/&gt;
+    &lt;DATE_OF_REQUEST&gt;6/19/2013 3:12:38 PM&lt;/DATE_OF_REQUEST&gt;
+    &lt;TRANSFER_STATUS&gt;A&lt;/TRANSFER_STATUS&gt;
+    &lt;DATE_TRANSFER_BEGIN&gt;6/19/2013 3:13:01 PM&lt;/DATE_TRANSFER_BEGIN&gt;
+    &lt;DATE_TRANSFER_COMPLETE/&gt;
+    &lt;TRANSFER_ERROR_TEXT/&gt;
+&lt;/ivr_data_transfer&gt;</testXML>
     </SonicTest>
   </TestCollection>
   <SonicTestFileName>C:\My Documents\Visual Studio 2012\VS_2012_Projects\WpfSonicTester\DataFiles\SonicTests.xml</SonicTestFileName>

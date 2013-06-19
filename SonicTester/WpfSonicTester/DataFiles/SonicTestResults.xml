@@ -1,0 +1,12 @@
+Test: electronic_auth_001
+<?xml version="1.0" encoding="UTF-8"?><ivr_data_transfer_response><ucid_number>1112</ucid_number><request_number>540</request_number><transfer_status>S</transfer_status><transfer_error_text></transfer_error_text></ivr_data_transfer_response>
+Test: RTW_001
+<?xml version="1.0" encoding="UTF-8"?><ivr_data_transfer_response><ucid_number>U1</ucid_number><request_number>207</request_number><transfer_status>S</transfer_status><transfer_error_text></transfer_error_text></ivr_data_transfer_response>
+Test: pmt_queried_001
+<?xml version="1.0" encoding="UTF-8"?><ivr_data_transfer_response><ucid_number>10472</ucid_number><request_number>650</request_number><transfer_status>S</transfer_status><transfer_error_text></transfer_error_text></ivr_data_transfer_response>
+Test: pmnt_query_002
+<?xml version="1.0" encoding="UTF-8"?><ivr_data_transfer_response><ucid_number>20130401002</ucid_number><request_number>779</request_number><transfer_status>S</transfer_status><transfer_error_text></transfer_error_text></ivr_data_transfer_response>
+Test: RTW_002
+<?xml version="1.0" encoding="UTF-8"?><ivr_data_transfer_response><ucid_number>10070</ucid_number><request_number>780</request_number><transfer_status>F</transfer_status><transfer_error_text>Request Number: 780 : Cannot get claimant for contract: '2573' with emp_unum: '422820639' ; </transfer_error_text></ivr_data_transfer_response>
+Test: elec_auth_002
+<?xml version="1.0" encoding="UTF-8"?><ivr_data_transfer_response><ucid_number>1112</ucid_number><request_number>781</request_number><transfer_status>F</transfer_status><transfer_error_text>Request Number: 781 : Unknown Message Type: 'electronic-auth';</transfer_error_text></ivr_data_transfer_response>
